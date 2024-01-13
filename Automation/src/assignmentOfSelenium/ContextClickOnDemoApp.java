@@ -24,10 +24,21 @@ public class ContextClickOnDemoApp {
 		
 		Actions act = new Actions(driver);
 		
-		// use context click method
+		// use context click method to right click on button
 		act.contextClick(driver.findElement(By.id("btn30"))).perform();
+		// to click on yes button
+		act.contextClick(driver.findElement(By.xpath("//div[text()='Yes']"))).click().perform();
 		
+		// click on 2nd right click button
+		act.contextClick(driver.findElement(By.id("btn31"))).perform();
+		// to click on yes button
 		driver.findElement(By.xpath("//div[text()='Yes']")).click();
+		
+		act.contextClick(driver.findElement(By.id("btn32"))).perform();
+		
+		
+		act.contextClick(driver.findElement(By.xpath("//div[text()='Yes']"))).click().perform();
+		
 	}
 
 }
