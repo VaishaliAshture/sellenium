@@ -23,9 +23,9 @@ public class Way2Bybrowser {
 			
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			
-			driver.get("https://www.apple.com/in/iphone/"
-					+ "");
-			//to use getscreenshotas method
+			driver.get("https://www.apple.com/in/iphone/");
+			
+			//to use get screenShotas method
 		   File src = driver.getScreenshotAs(OutputType.FILE);
 		   
 		   File dest = new File("./screenshot/iphone1.png");

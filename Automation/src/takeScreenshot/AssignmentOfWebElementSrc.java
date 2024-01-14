@@ -39,10 +39,10 @@ public class AssignmentOfWebElementSrc {
 			//to get the location of design of coins
 			driver.findElement(By.xpath("//span[text()='Coins by Design']")).click();
 			
-			// to identify perticular web element
+			// to identify particular web element
 	      WebElement gold	= driver.findElement(By.xpath("//img[@alt='50 gram 24 KT Lakshmi Gold Coin']"));
 			
-		// to teke screenshpt of web element call getscreenshotas method
+		// to take screenShot of web element call getscreenShotas method
 		  File src = gold.getScreenshotAs(OutputType.FILE);
 			   
 		   File dest = new File("./screenshot/gold.png");
