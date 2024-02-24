@@ -13,7 +13,7 @@ public class CreateUserOnActitime {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
-WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
 		
@@ -48,7 +48,12 @@ WebDriver driver = new ChromeDriver();
 		//to fill retype pwd
 		driver.findElement(By.xpath("//input[@name='passwordTextRetype']")).sendKeys("v12");
 		//to fill first name
-		driver.findElement(By.xpath("//input[@name='firstName']")).sendKeys("Kirti");
+	    WebElement firstname= driver.findElement(By.xpath("//input[@name='firstName']"));
+	    firstname.sendKeys("Kirti");
+	 
+	    //to print firstname
+	    System.out.println(firstname.getText());
+	 	
 		// to fill last name
 		driver.findElement(By.xpath("//input[@name='lastName']")).sendKeys("Ashture");
 		
